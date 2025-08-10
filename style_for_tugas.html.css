@@ -1,0 +1,78 @@
+body {
+    margin: 20px;
+    background-color: #ffffff; /* Warna latar belakang yang lembut */
+}
+
+h1 {
+    color: #000000;
+    text-align: left; /* Pusatkan judul */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 12px; /* Padding yang lebih besar untuk kenyamanan */
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF; /* Warna latar belakang untuk header tabel */
+    color: white; /* Warna teks untuk header tabel */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Efek hover untuk baris tabel */
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #28a745; /* Warna hijau untuk tombol */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Sudut membulat untuk tombol */
+    margin-right: 5px; /* Jarak antar tombol */
+}
+
+button:hover {
+    background-color: #218838; /* Warna lebih gelap saat hover */
+}
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Tampilkan tabel sebagai blok pada layar kecil */
+    }
+
+    th {
+        display: none; /* Sembunyikan header tabel pada layar kecil */
+    }
+
+    tr {
+        margin-bottom: 15px; /* Jarak antar baris */
+    }
+
+    td {
+        text-align: right; /* Rata kanan untuk sel */
+        position: relative;
+        padding-left: 50%; /* Ruang untuk label */
+    }
+
+    td:before {
+        content: attr(data-label); /* Menampilkan label untuk setiap sel */
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        white-space: nowrap; /* Mencegah pemotongan teks */
+        text-align: left; /* Rata kiri untuk label */
+    }
+}
