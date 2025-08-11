@@ -1,78 +1,84 @@
 body {
     margin: 20px;
-    background-color: #ffffff; /* Warna latar belakang yang lembut */
+    background-color: #000000; /* Latar belakang hitam */
+    color: #ffffff; /* Warna teks utama putih */
 }
 
-h1 {
-    color: #000000;
-    text-align: left; /* Pusatkan judul */
+h1, h4 {
+    color: #ffffff; /* Warna teks putih untuk judul */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    color: #ffffff; /* Warna teks putih untuk tabel */
 }
 
 th, td {
-    border: 1px solid #000000;
-    padding: 12px; /* Padding yang lebih besar untuk kenyamanan */
+    border: 1px solid #ffffff; /* Garis putih */
+    padding: 12px;
     text-align: left;
 }
 
 th {
-    background-color: #007BFF; /* Warna latar belakang untuk header tabel */
-    color: white; /* Warna teks untuk header tabel */
+    background-color: #333333; /* Warna header tabel lebih gelap */
+    color: #ffffff;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+    background-color: #1a1a1a; /* Warna baris genap gelap */
+}
+
+tr:nth-child(odd) {
+    background-color: #262626; /* Warna baris ganjil lebih terang */
 }
 
 tr:hover {
-    background-color: #e0e0e0; /* Efek hover untuk baris tabel */
+    background-color: #333333; /* Efek hover */
 }
 
 button {
     padding: 8px 12px;
-    background-color: #28a745; /* Warna hijau untuk tombol */
+    background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 4px; /* Sudut membulat untuk tombol */
-    margin-right: 5px; /* Jarak antar tombol */
+    border-radius: 4px;
+    margin-right: 5px;
 }
 
 button:hover {
-    background-color: #218838; /* Warna lebih gelap saat hover */
+    background-color: #218838;
+}
+
+input, textarea {
+    background-color: #333333; /* Warna input field gelap */
+    color: #ffffff; /* Warna teks input putih */
+    border: 1px solid #ffffff;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #cccccc; /* Warna placeholder lebih terang */
+}
+
+a {
+    color: #4da6ff; /* Warna link biru terang untuk kontras */
+}
+
+a:hover {
+    color: #80bfff;
 }
 
 @media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-        display: block; /* Tampilkan tabel sebagai blok pada layar kecil */
-    }
-
-    th {
-        display: none; /* Sembunyikan header tabel pada layar kecil */
-    }
-
-    tr {
-        margin-bottom: 15px; /* Jarak antar baris */
-    }
-
+    /* Pertahankan gaya responsif dengan penyesuaian warna */
     td {
-        text-align: right; /* Rata kanan untuk sel */
-        position: relative;
-        padding-left: 50%; /* Ruang untuk label */
+        color: #ffffff; /* Pastikan teks tetap putih */
     }
-
+    
     td:before {
-        content: attr(data-label); /* Menampilkan label untuk setiap sel */
-        position: absolute;
-        left: 10px;
-        width: calc(50% - 20px);
-        padding-right: 10px;
-        white-space: nowrap; /* Mencegah pemotongan teks */
-        text-align: left; /* Rata kiri untuk label */
+        color: #ffffff; /* Warna label putih */
     }
 }
