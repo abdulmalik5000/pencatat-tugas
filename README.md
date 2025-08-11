@@ -7,4 +7,4 @@ Saya sekarang ini sekolah di Sekolah Murid Merdeka di Matraman dan web ini adala
 Sebenarnya ada yang kurang dari website ini yaitu adalah CSS nya karena saya hanya lebih ke HTML Language. Sebenarnya dalam project membuat website itu diperlukan kerja team agar ada yang kerja
 bagian Kerangka webnya, lalu ada bagian designnya, dan ada yang bagian logikanya.
           
-Mungkin cukup sekian dari saya, kurag lebihnya saya mohon maaf. Kritik dan saran bisa langsungcontact email saya (qeqemaliq@gmail.com). Terima kasih.
+Mungkin cukup sekian dari saya, kurang lebihnya saya mohon maaf. Kritik dan saran bisa langsung contact email saya (qeqemaliq@gmail.com). Terima kasih.
